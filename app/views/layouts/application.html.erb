@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name">Stuart Tee</a>
+		<%= link_to "Stuart Tee", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="#">Projects</a>
@@ -23,6 +23,16 @@
 	</header>
 
 <%= yield %>
+
+<footer id="main_footer"> 
+		<p class="copyright">&copy; 2016 Stuart Tee</p>
+		<nav>
+			<a href="https://www.facebook.com/stuart.tee.7" target="_blank"><i class="fa fa-facebook-official" ></i></a>
+			<a href="https://uk.linkedin.com/in/stuart-tee-463a7ba6
+			" target="_blank"><i class="fa fa-linkedin" ></i></a>
+			<a href="https://github.com/stuartee93" target="_blank"><i class="fa fa-git"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>

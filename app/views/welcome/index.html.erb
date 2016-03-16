@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>I'm a developer living in Surrey, England</p>
+		<p>I am currently working at <a href="#">Bias Development</a> and <a href="#">Minboso</a> doing getting some Web Development Work Experience. </p>
+		<p>Recently I have started learning Ruby on Rails and learning more about JavaScript and JQuery</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've Written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime("%A, %B %d %Y") %></p>
+		<% end %>	
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff I've Built</h2>
+		<hr>
+		<h3><a href="#">Bias Development</a></h3>
+		<p class="date">Monday March 14th</p>
+		<h3><a href="http://minboso.com">Minboso</a></h3>
+		<p class="date">Monday March 14th</p>
+		<h3><a href="#">Personal Site</a></h3>
+		<p class="date">Monday March 14th</p>
+	</div>
+</div>
