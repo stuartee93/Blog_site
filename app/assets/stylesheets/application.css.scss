@@ -171,6 +171,28 @@ input[type="submit"], .button {
 	}
 }
 
+.project_button {
+	outline: none;
+	background: transparent;
+	border: 2px solid $border;
+	text-align: center;
+	font-size: 1em;
+	color: $dark;
+	text-decoration: none;
+	padding: 1em 2em;
+	&:hover {
+		border: 2px solid $highlight;
+		color: $highlight;
+	}
+
+}
+
+.button_wrapper {
+	margin: 4em 0 0 0;
+	text-align: center;
+
+}
+
 
 @import 'welcome';
 @import 'posts_projects';
