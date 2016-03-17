@@ -1,4 +1,12 @@
 <h1 id="page_title">Stuff I've Worked On</h1>
+
+<% if user_signed_in? %>
+			<div id="admin_links">
+				<%= link_to "Create New Project", new_project_path(@project) %>
+				
+			</div>
+<% end %>
+
 <div id="posts_wrapper" class="skinny_wrapper">
 	<% @projects.each do |project| %>
 		<div class="post">

@@ -1,5 +1,12 @@
 <h1 id="page_title">Stuff I've Written</h1>
 
+	<% if user_signed_in? %>
+			<div id="admin_links">
+				<%= link_to "Create New Article", new_post_path(@post) %>
+				
+			</div>
+	<% end %>
+
 	<div id="posts_wrapper" class="skinny_wrapper">
 		<% @posts.each do |post| %>
 			<div class="post">
@@ -9,5 +16,7 @@
 			</div>
 		<% end %>
 	</div>
+
+
 	
 	<%= will_paginate @posts %>
