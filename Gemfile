@@ -18,7 +18,7 @@ gem 'pygments.rb', '~> 0.6.3'
 gem 'jbuilder', '~> 2.0'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'friendly_id', '~> 5.1'
-
+gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
