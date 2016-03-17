@@ -12,8 +12,12 @@
 		</div>
 	
 		<hr>
-		<%= link_to "Edit", edit_project_path(@project) %>
-		<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"} %>
+		<div class="project_wrapper ">
+			<%= link_to "Edit", edit_project_path(@project) %>
+		</div>
+		<div class="project_button">
+			<%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure?"} %>
+		</div>	
 
 		<div id="share_box">
 			<p>Share The DO List</p>
