@@ -1,25 +1,28 @@
-<div class="wrapper wrapper_padding clearfix">
-	<div class="col-1 about homepage_content">
-		<h2>About</h2>
-		<hr>
-		<p>I'm a developer living in Surrey, England</p>
-		<p>I am currently working at <a href="#">Bias Development</a> and <a href="#">Minboso</a> getting some Web Development Work Experience. </p>
-		<p>Recently I have started learning Ruby on Rails and learning more about JavaScript and JQuery</p>
-	</div>
-	<div class="col-2 homepage_content">
-		<h2>Stuff I've Written</h2>
-		<hr>
-		<% @posts.each do |post| %>
-			<h3><%= link_to post.title, post %></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %B %d %Y") %></p>
-		<% end %>	
-	</div>
-	<div class="col-3 homepage_content">
-		<h2>Stuff I've Worked On</h2>
-		<hr>
-		<% @projects.each do |project| %>
-			<h3><%= link_to project.title, project %></h3>
-			<p class="date"><%= project.created_at.strftime("%A, %B %d %Y") %></p>
-		<% end %>	
+
+<div id="main_content">
+	<div class="wrapper wrapper_padding clearfix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p>I'm a developer living in Surrey, England</p>
+			<p>I am currently working at <a href="#">Bias Development</a> and <a href="#">Minboso</a> getting some Web Development Work Experience. </p>
+			<p>Recently I have started learning Ruby on Rails and learning more about JavaScript and JQuery</p>
+		</div>
+		<div class="col-2 homepage_content">
+			<h2>Stuff I've Written</h2>
+			<hr>
+			<% @posts.each do |post| %>
+				<h3><%= link_to post.title, post %></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %B %d %Y") %></p>
+			<% end %>	
+		</div>
+		<div class="col-3 homepage_content">
+			<h2>Stuff I've Worked On</h2>
+			<hr>
+			<% @projects.each do |project| %>
+				<h3><%= link_to project.title, project %></h3>
+				<p class="date"><%= project.created_at.strftime("%A, %B %d %Y") %></p>
+			<% end %>	
+		</div>
 	</div>
 </div>

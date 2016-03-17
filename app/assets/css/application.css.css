@@ -450,7 +450,8 @@ hr {
   border-bottom: 1px solid #E9E9E9;
   padding: 3em 0;
   font-size: 1rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 #main_footer {
   padding: 2.5em;
@@ -508,6 +509,21 @@ input[type="submit"], .button {
 .button_wrapper {
   margin: 4em 0 0 0;
   text-align: center; }
+
+#create_links {
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0; }
+  #create_links a {
+    color: #9a9da4;
+    margin: 0 1em;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none; }
+
+#main_content {
+  background-color: #EDF2F4; }
 
 .col-1, .col-2, .col-3 {
   float: left; }
@@ -597,7 +613,7 @@ input[type="submit"], .button {
   border-bottom: 1px solid #E9E9E9;
   text-align: center;
   padding: 1em 0;
-  margin: 3em 0; }
+  margin-bottom: 3em; }
   #admin_links a {
     color: #9a9da4;
     margin: 0 1em;
@@ -605,6 +621,17 @@ input[type="submit"], .button {
     font-size: .8em;
     text-transform: uppercase;
     text-decoration: none; }
+  #admin_links #create_links {
+    text-align: center;
+    padding: 1em 0;
+    margin: 3em 0; }
+    #admin_links #create_links a {
+      color: #9a9da4;
+      margin: 0 1em;
+      font-weight: 700;
+      font-size: .8em;
+      text-transform: uppercase;
+      text-decoration: none; }
 
 .pagination:before,
 .pagination:after {

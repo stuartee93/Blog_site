@@ -135,6 +135,7 @@ hr {
 	padding: 3em 0;
 	font-size: 1rem;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 #main_footer {
@@ -205,6 +206,26 @@ input[type="submit"], .button {
 	margin: 4em 0 0 0;
 	text-align: center;
 
+}
+
+#create_links {
+	text-align: center;
+		padding: 1em 0;
+		margin: 3em 0;
+
+		a {
+			color: $light;
+			margin: 0 1em;
+			font-weight: 700;
+			font-size: .8em;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	
+}
+
+#main_content {
+	background-color: #EDF2F4
 }
 
 
